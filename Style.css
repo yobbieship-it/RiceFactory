@@ -1,0 +1,27 @@
+:root{--g:#2f5d3a;--gold:#c9a227;--bg:#f5f3ea;--line:#d8d4c2}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:#222;padding-bottom:70px}
+main{padding:14px;max-width:720px;margin:auto}
+h2{color:var(--g);margin:6px 0 12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px}
+.card small{display:block;color:#666}
+.card b{font-size:1.6rem;color:var(--g)}
+.card span{color:#666;margin-left:6px}
+.card.big{background:var(--g);margin-bottom:10px}
+.card.big small,.card.big b,.card.big span{color:#fff}
+.card.big b{font-size:2.6rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+table{width:100%;border-collapse:collapse;background:#fff}
+td,th{padding:8px;border-bottom:1px solid var(--line);text-align:left;font-size:.9rem}
+.tot td{font-weight:700;background:#ece8d3}
+.scroll{overflow-x:auto}
+label{display:block;margin:8px 0;font-size:.9rem}
+input,select{width:100%;padding:10px;margin-top:4px;border:1px solid var(--line);border-radius:8px;font-size:1rem}
+button{padding:10px 14px;border:1px solid var(--g);background:#fff;color:var(--g);border-radius:8px;font-size:.95rem;margin:4px 4px 4px 0}
+button.pri{background:var(--g);color:#fff;width:100%;margin-top:10px}
+.note{color:#666;font-size:.85rem}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#fff;border-top:1px solid var(--line)}
+nav button{flex:1;border:0;border-radius:0;margin:0;padding:14px 2px;font-size:.75rem}
+nav button.on{background:var(--g);color:#fff}
+a{color:var(--g);font-weight:600}
+@media print{nav,.np{display:none}body{background:#fff}}
